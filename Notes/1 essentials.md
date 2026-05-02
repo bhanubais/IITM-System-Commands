@@ -1,3 +1,18 @@
+## Download Practice files
+
+```bash
+cd
+curl -o https://linuxpocketguide.com/LPG4.tar.gz
+tar -xf LPG4.tar.gz
+cd ~/linuxpocketguide
+
+# To re-download and install the practice files
+# (say you modified them)
+cd ~/linuxpocketguide
+bash reset-lpg
+
+```
+
 ## Linux has four major parts
 
 1. **Kernel**: Connects hardware, networks etc.
