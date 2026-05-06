@@ -31,3 +31,51 @@ Run each time while **log in**. Choose just one startup file and stick with it.
 |           | `.zlogin`                  |                            |                |
 |-----------|----------------------------|----------------------------|----------------|
 
+
+## Getting Help
+
+### `man` command
+Documentation
+
+Search for manual pages (manpages) by keyword for a particular topic `keyword`.
+- `man -k <keyword>`
+- example: `man -k database`
+
+get manual about a particular command
+- `man wc`
+
+### `info` command
+Extended, typertext help files. While `info` runs, some useful keystrokes are:
+
+- `h`           Get Help
+- `spacebar`    page forward
+- `backspace`   page backward
+- `tab`         jump between hyperlinks
+- `enter`       Follow hyperlink
+
+- To get information about a particular command i.e. `ls` here.
+  `info ls`
+
+- Get a listing of available documentations
+  `info`
+
+- To learn how to navigate the info system,
+  `info info`
+
+### `--help` or `-h` option
+
+Many linux commands respond to the option `--help` or `-h`
+
+- `wc --help`
+- `wc --help | less`
+
+### Supporting documents
+
+The directory `/usr/share/doc/` contains supporting documents (such as copyright, changelog, README, etc.) for various installed programs. For example:
+- `ls /usr/share/doc/whois`
+
+## Linux Communities
+
+- [It's FOSS Community!](https://itsfoss.community/)
+- [Unix & Linux](https://unix.stackexchange.com/)
+
