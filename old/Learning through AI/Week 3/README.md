@@ -1,4 +1,3 @@
----
 ## Week 3 Detailed Outline: Advanced Shell Usage and System Exploration
 
 1. **Managing Shell Variables**

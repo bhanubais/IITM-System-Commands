@@ -1,4 +1,3 @@
----
 ## Week 4 Detailed Outline: Scripting, Regular Expressions, and Command Line Editors
 
 1. **Redirection and Scripting Basics**
