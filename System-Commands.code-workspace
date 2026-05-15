@@ -4,5 +4,38 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"cSpell.words": [
+			"batcat",
+			"chgrp",
+			"cocalc",
+			"drwx",
+			"drwxr",
+			"drwxrwxrwx",
+			"fgrep",
+			"Fornwall",
+			"guake",
+			"hardlink",
+			"infile",
+			"jpegexample",
+			"Konsole",
+			"liah",
+			"LOGNAME",
+			"lrwxrwxrwx",
+			"metacharacters",
+			"msinfo",
+			"mydirectory",
+			"MYVAR",
+			"ncal",
+			"OLDPWD",
+			"replit",
+			"rootfs",
+			"rwxr",
+			"rwxrwxrwx",
+			"Termux",
+			"tmpfs",
+			"whois",
+			"wslg"
+		]
+	}
 }

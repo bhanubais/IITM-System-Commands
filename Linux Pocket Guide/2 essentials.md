@@ -158,9 +158,15 @@ ll
 # drwx------  3 bhanubais 4.0K Apr 15 16:08 snap
 ```
 
-Note: There are temperory to the current session only.
-To make them parmanently, define them in `~.bashrc` file to make
+Note: There are temporary to the current session only.
+To make them permanently, define them in `~.bashrc` file to make
 them available to the future shells. (Some setups use `~/.bash_aliases` for this purpose)
+
+### Ignore alias
+
+You can ignore alias and run original command using `\` in front of the command
+
+Eg. `\ls`
 
 ## Input, Output, Error, and Redirection
 
@@ -179,7 +185,7 @@ them available to the future shells. (Some setups use `~/.bash_aliases` for this
 
 ### Error handling
 
-Redirect errors in the `errorfile` while standard output on the screen.
+Redirect `stderr` in the `errorfile` while `stdout` on the screen.
 - `command 2> errorfile`
 
 Redirect `stdout` to the `output` file, while `stderr` to the `errorfile`

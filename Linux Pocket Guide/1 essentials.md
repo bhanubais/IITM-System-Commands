@@ -31,8 +31,8 @@ bash reset-lpg
 **Shell expansions** (opt.):
 Break expanded tokens into lists of filenames, commands, and arguments.
     ↓
-**Redirections** (opt.):
-Perform redirections and removes operators and their operands from argument list.
+**Redirection** (opt.):
+Perform redirection and removes operators and their operands from argument list.
     ↓
 **Execute**:
     ↓
@@ -115,7 +115,7 @@ ls -ld /* | grep "^l"
 ls /proc -la | grep "^d" -v
 # -v reverse selection
 
-# or we can leaverate regulalr expression
+# or we can leverage regular expression
 ls /proc -la | grep "^[^d]"
 # [^d] means not d
 ```
@@ -200,8 +200,8 @@ Expand to become multiple arguments to a command.
 Examples:
 
 ```bash
-echo {bubble,quick,merg}sort.java
-# bubblesort.java quicksort.java mergesort.java
+echo {bubble,quick,merge}-sort.java
+# bubble-sort.java quick-sort.java merge-sort.java
 
 echo {1..6}
 # 1 2 3 4 5 6

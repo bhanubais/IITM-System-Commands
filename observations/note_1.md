@@ -28,10 +28,11 @@ man ls
 hostnamectl
 lsb_release -a
 whoami
-hostname -i
-hostname -I
+hostname -i     # local IP address
+hostname -I     # public IP address
 
 # Following files also store information about the system
+# press `q` to quit
 `batcat /proc/cpuinfo`
 `batcat /proc/version`
 `batcat /proc/meminfo`

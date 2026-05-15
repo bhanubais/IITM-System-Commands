@@ -1,39 +1,46 @@
-## Week 1 Notes 
+# Week 1 Notes
 
-### wsl: Windows System for Linux
+## wsl: Windows System for Linux
 * If you have Windows 11, It is recommended to use `wsl` instead of other options.
-* Enable Virtualisation in the BIOS if not enabled.
+* Enable Virtualization in the BIOS if not enabled.
 * User `wsl` command in powershell to install Linux and restart the PC
-  - `wsl -l -o` : see available Linux distros
+  - `wsl -l -o` : see available Linux distro
   - `wsl --install -d <DistroNames>` : install your distro
-  - `wsl --install` : install latest Ubunto LTS by default
+  - `wsl --install` : install latest Ubuntu LTS by default
 * Run <DistroName> through start menu and Set username and password
 * Now you can use `bash` or `wsl` command from anywhere to run your installed Linux distro.
-### Linux Virtual Machine 
-* #### ISO 
+
+## Linux Virtual Machine
+
+* ## ISO
   - image of Linux OS (Ubuntu 20.04 LTS for x86_64 platform)
-* #### Hypervisor 
+
+* ## Hypervisor
   - (eg: Oracle VirtualBox or VMWare Workstation Player)
   - A Hypervisor creates and runs virtual machines
   - It allows running multiple operating systems while sharing hardware resources
-### Command Line Environments
+
+## Command Line Environments
 * Cloud - replit and cocalc
 * Phone - Termux by Fredrick Fornwall
 
-### Terminal Emulators 
+
+## Terminal Emulators
 * Terminal
 * Konsole
 * xterm
 * guake
-### Command Prompt
+
+## Command Prompt
 * `username@hostname:~$ `
   - `~$` is the path
-### Know your system
-* `uname -a` 
+
+## Know your system
+* `uname -a`
   - prints the name, version and other details about the current machine and the operating system running on it.
-* `hostnamectl` 
-  - prints system related information such as hostname, OS, Kernal, Architecture etc.
-* `msinfo32` 
+* `hostnamectl`
+  - prints system related information such as hostname, OS, Kernel, Architecture etc.
+* `msinfo32`
   - Similar command for Windows.
 * `hostname`
   - `-i` : local ip address
@@ -43,7 +50,8 @@
 * `lsb_release -a`
   - display distribution-specific information
   - Distribution ID, Fullname, Release Version, Codename etc.
-### Getting help for a command
+
+## Getting help for a command
 * `man`
   - get help on any command in linux. eg : man ls
   - man sections (1 to 9) eg : man 1 ls
@@ -61,11 +69,12 @@
   - Need to install separately.
     + `npm install -g tldr`
   - `tldr ls` : Use cases of ls command
-### Basic Commands and Flags
-* `pwd` 
-  - Present Working Directory 
+
+## Basic Commands and Flags
+* `pwd`
+  - Present Working Directory
 * `ls`
-  - `-a` : all . displays hidden files 
+  - `-a` : all . displays hidden files
   - `-l` : use a long listing format
   - `-i` : print index number of each file (inode)
   - `-s` : shows blocks occupied by each file
@@ -78,21 +87,21 @@
   - show the content of the current directory as a tree
   - `-a` : show all files or folders including hidden
   - `-d` : list directories themselves, not their content
-* `rm` 
-  - remove a file 
+* `rm`
+  - remove a file
   - `rm -i` prompts before every removal (it can be set using `alias rm="rm -i"`)
   - works only with write permission
   - use `-d` for removing directories
-  - `rm -r mydirectory`  
+  - `rm -r mydirectory`
 * `mv`
-  - move , rename 
+  - move , rename
   - `mv file1 ..` (moves file to parent dir)
   - `mv file1 file1a` (renames file1 to file1a)
-* `ps` 
+* `ps`
   - currently running processes
 * `clear`
   - or ctrl+l
-* `exit` 
+* `exit`
   - or ctrl+d
 * `cd`
   - change directory eg cd .. - goes to parent directory
@@ -118,13 +127,13 @@
   - what type of file
   - `-f` allows you to pass a file in which file names are separated by lines (ls -1 > files.txt; file -f files.txt)
   - `file *`  will give a list of file name and types directly
-* `mkdir` 
+* `mkdir`
   - create a directory
   - default permissions (umask)
 * `touch`
   - used to change the last modified timestamp of a file
   - also used to create empty files
-* `chmod` 
+* `chmod`
   - `chmod 777 file.txt`
   - `chmod g-w file.txt` (removes write permissions from the group)
   - `chmod o-x file.txt` (removes executable permission from others)
@@ -133,12 +142,13 @@
   - allows you to read a file page by page
 * `ln`
   - used to create a hard link or a symbolic link (symlink) to an existing file or directory
-  - `ln -s /path/to/file_or_directoy /path/to/symlink` : Create symbolic link
-  - `ln /path/to/file /path/to/hardlink` : Create hardlink. Although, Linux system themself can create hardlink, we can't create a hardlink for a directory.
-* `cat` 
-  - stands for concatinate
-  - allows you to view the contents of a single file or multiple files (gets concatinated)
-### File types 
+  - `ln -s /path/to/file_or_directory /path/to/symlink` : Create symbolic link
+  - `ln /path/to/file /path/to/hardlink` : Create hardlink. Although, Linux system themselves can create hardlink, we can't create a hardlink for a directory.
+* `cat`
+  - stands for concatenate
+  - allows you to view the contents of a single file or multiple files (gets contaminated)
+
+## File types
 * output of `ls -l` : `drwxrwxrwx or lr-x--x--x` (l indicates symbolic link and d indicates directory)
 * `-` Regular file
 * `d` Directory
@@ -147,27 +157,30 @@
 * `b` Block file  (usually found in /dev ; typically the hard disk)
 * `s` Socket file
 * `p` named pipe
-### Viewing and Adding to files
+
+## Viewing and Adding to files
 * `cat` - to view the contents of a file
 * writing to a file : `>` eg : `echo "Hello world" > test.txt`
-* appending to a file : `>>` eg : `echo "Helo world" >> test.txt`
+* appending to a file : `>>` eg : `echo "Hello world" >> test.txt`
 
-### Hard links and Soft links
+
+## Hard links and Soft links
 * inode - An entry in the filesystem table about the location in the storage media
 * hard link points to the same inode
 * soft link points to a hard link
 * hard link must be on the same partition while soft link can point to a file at a totally different geographical location.
 * inode is metadata for the file . eg : size ,permissions,blocks etc.
 * `ls -i <name>`
-* `ln` and `ln -s` is used for creating hard links and soft links 
+* `ln` and `ln -s` is used for creating hard links and soft links
 * inode is unique for every file : if there are multiple entries of inode then it means that they are all hard links
   - if there is a dir level1 with inode = 18874686
   - when you cd into that dir . will also have inode = 18874686
   - if i make a dir level2 inside level1 and then cd into level2 .. will have inode = 18874686 (no of hard links will increase by 1)
-  - as number of sub directories increases the number of hardlinks also keeps increasing
+  - as number of sub directories increases the number of hardlink(s) also keeps increasing
 * users cannot create hard links for directories (level1 to level2 and level2 to level1 will create a back and forth)
-  
-### Permissions 
+
+
+## Permissions
 * Files and directories do not inherit the parent directory permissions
 * `rwxrwxrwx` (777)
   - 7 rwx
@@ -177,15 +190,16 @@
   - 3 -wx
   - 2 -w-
   - 1 --x
-* rwx rwx rwx : Owner Group Others 
-* only owners can change permissions of a file 
-* Execute permission is required on a directory to cd into it (Even ls and tocuh to a dir will not work)
-* If you want to access a file, all its parent direcories should have **x** permission. This works even without r and w permissions if you know the path.
+* rwx rwx rwx : Owner Group Others
+* only owners can change permissions of a file
+* Execute permission is required on a directory to cd into it (Even ls and touch to a dir will not work)
+* If you want to access a file, all its parent directories should have **x** permission. This works even without r and w permissions if you know the path.
 * r and w permissions along with x is required to ls a directory or touch a file into a directory
 * Removing a file works only if it has write permission
 
-### File System of Linux OS
-* Filesystem Hirearchy Standard FHS 3.0 (June 03, 2015) (refspecs.linuxfoundation.org/fhs.shtml)
+
+## File System of Linux OS
+* Filesystem Hierarchy Standard FHS 3.0 (June 03, 2015) (refspecs.linuxfoundation.org/fhs.shtml)
 * `/` is root directory and field separator or delimiter for sub-directories
 * `.` references the current directory (. is a special file in every directory)
 * `..` references the parent directory (.. is a special file in every directory)
@@ -197,8 +211,8 @@
 * `/dev` device files (different character in long format of file listing 'c' instead of 'l' or 'd'. 'c' indicates character file - means you can read from it character by character. if first character is 'b' they are block devices typically hdds - the block devices are made available as files.)
 * `/etc` Host specific system configuration (.conf files)
 * `/lib` Essential shared libraries and kernel modules (Typically contain files with version number at the end)
-* `/media` mount points for removable devices 
-* `/mnt` mount points 
+* `/media` mount points for removable devices
+* `/mnt` mount points
 * `/opt` add on application software packages
 * `/run` Data relevant to running processes
 * `/sbin` essential system binaries
@@ -209,20 +223,20 @@
   - `/usr/lib` : libraries
   - `/usr/local` : local hierarchy
   - `/usr/sbin` : non vital system binaries
-  - `/usr/share` : architecture dependent data 
+  - `/usr/share` : architecture dependent data
   - `/usr/include` : header files included by c programs
   - `/usr/src` : source code
 * `/var` variable data (`/var/log` contains logs for various services)
   - `/var/cache` : Application cache data
-  - `/var/lib` : Variable state informtion
+  - `/var/lib` : Variable state information
   - `/var/local` : variable data for /usr/local
   - `/var/lock` : lock files
-  - `/var/log` : log files and directories 
+  - `/var/log` : log files and directories
   - `/var/run` : data relevant to running processes
   - `/var/tmp` : temporary files preserved between reboots
 
 
-|          |    Shareable  |  Unsharable |
+|          |    Shareable  | Un-sharable |
 |----------|:-------------:|------:|
 | static   |  `/usr and /opt` | `/etc` and `/boot` |
 | variable |    `/var/mail`   |   `/var/run` and `/var/lock` |

@@ -1,7 +1,7 @@
 ## Combined Commands
 
 ```bash
-# Invode severals commands in sequence
+# Invoke severals commands in sequence
 command1 ; command2 ; command3
 
 # AND: Stop execution if anyone of them failed.
@@ -14,7 +14,7 @@ command1 || command2 || command3
 ## Pipes
 
 ```bash
-# Pass stdout of the command1 to stdinput to the command2.
+# Pass `stdout` of the command1 to `stdin` to the command2.
 command1 | command2
 
 # sort list alphabetically
@@ -72,7 +72,7 @@ ls *.jpg | cut -d . -f 1
 
 ## Process Substitution
 
-Some commands get input only from disk files instead of stdinput.
+Some commands get input only from disk files instead of `stdin`.
 For example, `diff` command. To resolve it we can use `<()` operator.
 
 `diff` command compare two files
@@ -94,6 +94,18 @@ diff <(ls *.jpg | cut -d . -f 1) <(ls *.txt | cut -d . -f 1)
 # > file6
 # 8d8
 # < file9
+
+# See the results side by side
+diff <(ls *.jpg | cut -d . -f 1) <(ls *.txt | cut -d . -f 1) -y
+# file1                                                           file1
+# file2                                                           file2
+# file3                                                           file3
+# file4                                                           file4
+# file5                                                           file5
+#                                                               > file6
+# file7                                                           file7
+# file8                                                           file8
+# file9                                                         <
 
 ```
 
