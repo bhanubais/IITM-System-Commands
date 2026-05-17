@@ -6,12 +6,16 @@
 	],
 	"settings": {
 		"cSpell.words": [
+			"auxw",
+			"auxww",
 			"batcat",
 			"chgrp",
 			"cocalc",
 			"drwx",
 			"drwxr",
 			"drwxrwxrwx",
+			"ecutable",
+			"ecute",
 			"fgrep",
 			"Fornwall",
 			"guake",
@@ -34,11 +38,15 @@
 			"rootfs",
 			"rwxr",
 			"rwxrwxrwx",
+			"shortkey",
+			"shortkeys",
 			"Termux",
+			"thers",
 			"tmpfs",
 			"whereis",
 			"whois",
-			"wslg"
+			"wslg",
+			"YYYYMMDDHHMM"
 		]
 	}
 }

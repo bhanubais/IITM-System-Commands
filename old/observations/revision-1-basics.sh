@@ -12,7 +12,7 @@ echo -n "hello "; echo world;
 
 # Creating the file
 # create file but never overwrite if already exists
-touch filename 
+touch filename
 # Redirection method
 # it will overwrite the file if it exists.
 >filename
@@ -33,7 +33,7 @@ tree
 #         └── dir_2.1.1
 #             └── dir_2.1.1.1
 
-# Persent working directory
+# Present working directory
 pwd
 echo $PWD
 
@@ -183,7 +183,7 @@ echo $(( 4 <= 4 ))
 echo $(( 4.3 + 2.3 ))
 # -bash: 4.3 + 2.3 : syntax error: invalid arithmetic operator (error token is ".3 + 2.3 ")
 
-# To use the float arithmetics we can use Bench Calculator `bc` 
+# To use the float arithmetics we can use Bench Calculator `bc`
 echo '4.3 + 2.3' | bc -l
 # 6.6
 
