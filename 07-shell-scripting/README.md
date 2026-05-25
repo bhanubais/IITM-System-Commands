@@ -8,3 +8,4 @@ This domain governs programmatic execution, shell logic logic arrays, and variab
 * [07.02 Arithmetic and Logic Evaluation](07.02-arithmetic-and-logic-evaluation.md)
 * [07.03 Control Structures](07.03-control-structures.md)
 * [07.04 Command Redirection and Substitution](07.04-command-redirection-and-substitution.md)
+* [07.05 Functions and Argument Parsing](07.05-functions-and-argument-parsing.md)
