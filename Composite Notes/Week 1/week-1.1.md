@@ -252,3 +252,72 @@ open # tab tab
 # openfiles.exe  opengl32.dll   openssl        openvt
 
 ```
+
+## Some interesting things
+
+Using `/` single or multiple times doesn't affect the outcome.
+
+```bash
+bhanubais@Laptop-82XW:~$ pwd
+/home/bhanubais
+bhanubais@Laptop-82XW:~$ cd ////////usr/////bin/////
+bhanubais@Laptop-82XW:/usr/bin$ pwd
+/usr/bin
+bhanubais@Laptop-82XW:/usr/bin$
+```
+
+Parent of the root always the root itself.
+
+```bash
+bhanubais@Laptop-82XW:~$ pwd
+/home/bhanubais
+bhanubais@Laptop-82XW:~$ cd /
+bhanubais@Laptop-82XW:/$ pwd
+/
+bhanubais@Laptop-82XW:/$ cd /
+bhanubais@Laptop-82XW:/$ pwd
+/
+bhanubais@Laptop-82XW:/$
+```
+
+
+## Aliases
+
+List all aliases
+
+```bash
+alias
+# alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+# alias egrep='egrep --color=auto'
+# alias fgrep='fgrep --color=auto'
+# alias grep='grep --color=auto'
+# alias l='ls -CF'
+# alias la='ls -A'
+# alias ll='ls -lhG'
+# alias ls='ls --color=auto'
+```
+
+
+Define a new command `ll` that run `ls -lGh`.
+
+```bash
+alias ll='ls -lGh'
+ll
+# -rw-r--r--  1 bhanubais 6.0M Apr  9 03:27 LPG4.tar.gz
+# drwxr-xr-x 11 bhanubais 4.0K Apr 27 09:05 linuxpocketguide
+# drwx------  3 bhanubais 4.0K Apr 15 16:08 snap
+```
+
+Note: There are temporary to the current session only.
+To make them permanently, define them in `~.bashrc` file to make
+them available to the future shells. (Some setups use `~/.bash_aliases` for this purpose)
+
+### Ignore alias
+
+You can ignore alias and run original command using `\` in front of the command
+
+Eg. `\ls`
+
+### removing alias
+
+`unalias ll`

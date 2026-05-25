@@ -1,4 +1,4 @@
-# Notes: Week 1.1
+# Notes: Week 1.2
 
 ## Download Practice files
 
@@ -49,6 +49,13 @@ Perform redirection and removes operators and their operands from argument list.
 cal apr 2026
 cal 2026
 cal
+
+# Current Date
+day
+# Tue May 19 11:46:52 UTC 2026
+day -R
+# Tue, 19 May 2026 11:47:06 +0000
+
 
 # line count
 ls /bin | wc -l
@@ -147,6 +154,27 @@ cp -p path/to/source_file path/to/target_file
 # Force the copy, if the destination file exists, overwrite it unconditionally.
 cp -f path/to/source_file path/to/target_file
 
+# Note: If the second argument is a file then the content
+# of the first file will be copied into second file and the content
+# of the second file will be gone.
+pwd
+# /home/bhanubais/test
+ls
+
+echo "content for 'file_1'" > file_1
+echo "content for 'file_2'" > file_2
+ls
+# file_1  file_2
+cat file_1 file_2
+# content for 'file_1'
+# content for 'file_2'
+cp file_1 file_2
+cat file_1 file_2
+# content for 'file_1'
+# content for 'file_1'
+
+# content of the file_2 is gone now.
+
 # ---------------------------
 
 # Rename a file or directory when the target doesn't exist
@@ -202,6 +230,10 @@ file ./script*
 # Display properties about a specific file such as size, permissions, creation date, and access date among others:
 stat path/to/file
 stat path/to/files*
+
+# See File size (more specifically Disk Usage)
+du path/to/file
+du -h path/to/file
 
 # Create specific files or update their timestamps if they already exist:
 touch path/to/file_1 path/to/file_2 ...

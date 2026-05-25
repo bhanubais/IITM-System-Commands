@@ -100,8 +100,9 @@ export MYVAR=3
 ### List all environment variables
 
 ```bash
-printenv
 # print all variables current the shell has access
+printenv
+env
 
 printenv OLDPWD
 # /home/bhanubais
@@ -109,53 +110,17 @@ printenv OLDPWD
 echo $OLDPWD
 # /home/bhanubais
 
+# there are few pre-defined functions for the user.
+# those can be seen using following command
+set
+
 ```
 
-## Program type and location
-
-There are three kind of commands: `built-in`, `filesystem`, `alias`.
-We can use `type <command-name>...` command to see what type of a particular command is:
+### special shell variables
 
 ```bash
-type ws cd ls
-# wc is /usr/bin/wc
-# cd is a shell builtin
-# ls is aliased to `ls --color=auto'
+echo $0 # name of the shell i.e. bash or ksh
+echo $$ # process id of the shell
+echo $- # flags set that are currently used by the bash
+echo $? # error code of the last command
 ```
-
-If a command is either filesystem or an alias (originally based on a filesystem) based, we can see it's location using `which <command-name>...`
-
-```bash
-which ls who
-# /usr/bin/ls
-# /usr/bin/who
-```
-
-## Input, Output, Error, and Redirection
-
-- `stdin`: Keyboard input
-- `stdout`: On Terminal's Display
-- `stderr`: On Terminal's Display but considered different than `stdout` internally.
-
-### Input
-
-- `command < infile`: A command can read input from a file
-
-### Output
-
-- `command > outfile`: Create/overwrite outfile
-- `command >> outfile`: Append to outfile
-
-### Error handling
-
-Redirect `stderr` in the `errorfile` while `stdout` on the screen.
-- `command 2> errorfile`
-
-Redirect `stdout` to the `output` file, while `stderr` to the `errorfile`
-- `command > output 2> errorfile`
-
-Redirect both in a single file
-- `command &> outfile`
-- `command >& outfile`: Deprecated version
-
-
