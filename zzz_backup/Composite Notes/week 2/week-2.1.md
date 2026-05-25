@@ -124,3 +124,38 @@ echo $$ # process id of the shell
 echo $- # flags set that are currently used by the bash
 echo $? # error code of the last command
 ```
+
+## Process Control `echo $$`
+
+use of `&` to run a job in the background
+
+- `fg` - bring process to foreground
+- `coproc` - run a command while also being able to use the shell
+- `jobs` - list programs running in the background
+- `top` - See programs that are hogging the CPU or memory (refreshed every second)
+- `kill` - kill process owned by you
+
+## Program Exit Codes** `echo $?`
+
+- exit code always has a value between *0 and 255*
+- 0 : Success
+- 1 : Failure
+- 2 : Misuse (insufficient permissions)
+- 126 : command cannot be executed (usually due to insufficient permissions to execute a file)
+- 127 : command not found (usually due to command typos)
+- 130 : processes killed using control+c
+- 137 : processes killed using `kill -9 <pid>`
+- If the exit code is more than 256 then the exit code %256 will be reported as the exit code
+- `exit 0` or `exit 1` or `exit <n>` exits with exit code n
+- Used when there are command dependencies (ie: run second command only if first command completes successfully)
+
+## Flags set in bash** `echo $-`
+
+- h : locate hash commands
+- B : braceexpansion enabled
+- i : interactive mode
+- m : job control enabled (can be taken to bg or fg)
+- H : !style history substitution enabled
+- s : commands are read from stdin
+- c : commands are read from arguments
+

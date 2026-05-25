@@ -1,0 +1,10 @@
+# 07. Shell Scripting
+
+This domain governs programmatic execution, shell logic logic arrays, and variable manipulation. Structure complex pipelines using strict POSIX constructs.
+
+## Local Index
+
+* [07.01 Variables, Input and Output](07.01-variables-input-and-output.md)
+* [07.02 Arithmetic and Logic Evaluation](07.02-arithmetic-and-logic-evaluation.md)
+* [07.03 Control Structures](07.03-control-structures.md)
+* [07.04 Command Redirection and Substitution](07.04-command-redirection-and-substitution.md)
