@@ -49,6 +49,7 @@
 			"rootfs",
 			"rwxr",
 			"rwxrwxrwx",
+			"sandboxed",
 			"shortkey",
 			"shortkeys",
 			"Termux",
