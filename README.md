@@ -1,4 +1,4 @@
-# Linux Command Repository
+# Linux System Commands
 
 This repository is a practical map for learning and revisiting Linux commands. Start with `01` and move through the domains in order, or jump directly to the topic you need.
 
