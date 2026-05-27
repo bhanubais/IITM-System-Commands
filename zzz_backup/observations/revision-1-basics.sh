@@ -86,7 +86,7 @@ echo ${var4:-not defined}
 # not defined
 
 # If you want to update the value itself
-echo ${var4:=defult value}
+echo ${var4:=default value}
 # default value
 
 # If the value is defiend and we want to show
@@ -132,11 +132,11 @@ echo ${arr1[@]}
 # 1 2 3 4
 
 
-# Boolean comparision
+# Boolean comparison
 # --------------------------
 # (Note: output of $? 0 means true, else false)
 
-# String comparision
+# String comparison
 [ 2 > 1 ]; echo $?
 # 0
 [ 2 > 10 ]; echo $?
@@ -144,7 +144,7 @@ echo ${arr1[@]}
 [ 2 = 10 ]; echo $?
 # 1
 
-# Numeric comparision
+# Numeric comparison
 [ 2 -gt 1 ]; echo $?
 # 0
 [ 2 -gt 10 ]; echo $?
@@ -156,18 +156,18 @@ echo ${arr1[@]}
 [ 2 -ne 10 ]; echo $?
 # 0
 
-# Extended comparision
-# For extended comparision we should use
+# Extended comparison
+# For extended comparison we should use
 # [[ ]]
 [[ 20 -gt 10 && 5 -lt 8 ]]; echo $?
 # 0
 [[ 20 -gt 10 && 10 -lt 3 || 6 -gt 2 ]]; echo $?
 # 0
 
-# double parantheses (( ))
+# double parentheses (( ))
 # --------------------------
-# It is used for the arithmatic comparisions
-# We can also do boolean comparision also but the
+# It is used for the arithmetic comparisons
+# We can also do boolean comparison also but the
 # 0 means False and 1 means True here.
 # This is very similar to to other programming languages.
 echo $(( 4 + 5 ));
@@ -179,7 +179,7 @@ echo $(( 4 < 4 ))
 echo $(( 4 <= 4 ))
 # 1
 
-# Keep in mind that we can't do floating arithimetics here.
+# Keep in mind that we can't do floating arithmetics here.
 echo $(( 4.3 + 2.3 ))
 # -bash: 4.3 + 2.3 : syntax error: invalid arithmetic operator (error token is ".3 + 2.3 ")
 
