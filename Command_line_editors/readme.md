@@ -3,3 +3,4 @@
 * [nano](nano.md)
 * [vi](vi.md)
 * [emacs](emacs.md)
+* [ed](ed.md)
