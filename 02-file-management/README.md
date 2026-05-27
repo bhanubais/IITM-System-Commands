@@ -1,8 +1,8 @@
 # 02. File Management
 
-This domain dictates the structural governance of the filesystem. It covers directory traversal, file manipulation, permission auditing, and node linking.
+Use this domain to move through directories, manage files, inspect permissions, and work with links.
 
-## Local Index
+## Index
 
 * [02.01 Directory Governance](02.01-directory-governance.md)
 * [02.02 File Operations](02.02-file-operations.md)

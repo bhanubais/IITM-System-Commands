@@ -1,8 +1,8 @@
 # 04. Text Editors
 
-This domain dictates the usage of terminal-based text editors. Establish proficiency in line manipulation, screen navigation, and buffer management without graphical environments.
+Learn terminal editors for quick edits, remote work, and low-bandwidth sessions.
 
-## Local Index
+## Index
 
 * [04.01 vi Operations and Configuration Management](04.01-vi-operations.md)
 * [04.02 nano Operations and Log Reading](04.02-nano-operations.md)

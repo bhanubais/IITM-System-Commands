@@ -1,8 +1,8 @@
 # 01. Core Essentials
 
-This domain governs basic system initialization and hardware reconnaissance. It establishes the baseline for all lower-level system operations.
+Start here for host setup, hardware checks, and the basic help tools you will use everywhere else.
 
-## Local Index
+## Index
 
 * [01.01 Windows Host Preparation](01.01-windows-host-preparation.md)
 * [01.02 WSL Initialization](01.02-wsl-initialization.md)

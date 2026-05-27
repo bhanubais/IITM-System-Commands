@@ -1,4 +1,4 @@
-Migration summary — Pocket Guide / backup integration
+Migration summary: Pocket Guide / backup integration
 
 Date: 2026-05-27
 

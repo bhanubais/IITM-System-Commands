@@ -1,8 +1,8 @@
-# Linux Command Repository Architecture
+# Linux Command Repository
 
-This repository serves as a living, scalable Linux command index. It operates under strict system governance and structural clarity. The architecture is modular. It scales by operational domain.
+This repository is a practical map for learning and revisiting Linux commands. Start with `01` and move through the domains in order, or jump directly to the topic you need.
 
-## Global Index
+## Index
 
 * [01. Core Essentials](01-core-essentials/README.md)
 * [02. File Management](02-file-management/README.md)

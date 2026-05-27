@@ -1,7 +1,7 @@
-# Domain 09: Version Control and Git Architecture
+# 09. Version Control and Git
 
-This domain governs sequential codebase architecture ensuring historical arrays trace securely and collaborative branch tracking handles asynchronous team operations dynamically natively.
+Use this domain to track history, manage branches, and collaborate safely with Git.
 
-## Module Index
+## Index
 
 * [09.01 Git Fundamentals](09.01-git-fundamentals.md)

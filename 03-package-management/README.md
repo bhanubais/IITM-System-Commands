@@ -1,8 +1,8 @@
 # 03. Package Management
 
-This domain engineers the deployment, update, and systematic removal of external software dependencies.
+Use this domain to install, verify, update, and remove software packages with confidence.
 
-## Local Index
+## Index
 
 * [03.01 Software Management (Debian/APT)](03.01-debian-software-governance.md)
 * [03.02 Checksum Validation and Data Integrity](03.02-checksum-validation.md)

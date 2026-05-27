@@ -1,8 +1,8 @@
 # 06. Shell Environment
 
-This domain engineers the shell interface and process management. It dictates job control scaling, prompt configuration, and multiplexing operations.
+Use this domain to tune the shell, manage jobs, and keep your working environment predictable.
 
-## Local Index
+## Index
 
 * [06.01 Shell Configurations and Prompts](06.01-shell-configurations-and-prompts.md)
 * [06.02 Job Control and Processes](06.02-job-control-and-processes.md)

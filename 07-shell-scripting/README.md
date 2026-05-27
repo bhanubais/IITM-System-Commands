@@ -1,8 +1,8 @@
-# Domain 07: Shell Scripting Architecture
+# 07. Shell Scripting
 
-This domain governs programmatic execution, shell syntax logic arrays, and dynamic variable manipulation. Structure complex data pipelines seamlessly using strict POSIX-compliant script constructs.
+Write shell programs that combine variables, branching, and command substitution into repeatable workflows.
 
-## Module Index
+## Index
 
 * [07.01 Variables, Input and Output](07.01-variables-input-and-output.md)
 * [07.02 Arithmetic and Logic Evaluation](07.02-arithmetic-and-logic-evaluation.md)

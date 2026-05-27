@@ -52,6 +52,6 @@ ___
   - Lecture 7.1 = [sample.txt](sample.txt)
 
 * Misc
-  - [revision-1-basics.sh](revision-1-basics.sh) — short annotated basics script
+  - [revision-1-basics.sh](revision-1-basics.sh): short annotated basics script
 
 Note : To download these files to your local system right click on 'Raw' and then select 'Save link as'

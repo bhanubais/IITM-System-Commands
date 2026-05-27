@@ -1,8 +1,8 @@
-# Domain 08: Remote Networking and Payload Operations
+# 08. Networking and Web
 
-This domain dictates the network diagnostic parameters linking the operating system to remote payload origins and external HTTP execution endpoints exactly.
+Use this domain to inspect network paths and work with simple web requests.
 
-## Module Index
+## Index
 
 * [08.01 Network Diagnostics](08.01-network-diagnostics.md)
 * [08.02 Web Payloads and HTTP Interaction](08.02-web-payloads.md)
