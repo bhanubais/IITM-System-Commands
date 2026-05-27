@@ -13,6 +13,8 @@ Use the command index for fast lookup.
 
 Keep every topic small enough to scan in under two minutes.
 
+Use concise inline comments in examples when a flag, operator, expansion, or side effect is not self-evident. Do not comment obvious commands.
+
 Ignored folders are outside the active syllabus:
 
 * `zzz_backup/`
@@ -49,4 +51,3 @@ Ignored folders are outside the active syllabus:
 * Script failure: start in `07-shell-scripting`.
 * Connectivity failure: start in `08-networking-and-web`.
 * Bad commit or branch state: start in `09-version-control-git`.
-
