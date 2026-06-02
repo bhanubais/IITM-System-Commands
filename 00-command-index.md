@@ -10,10 +10,10 @@ Use it to jump from a command to its governing file.
 |---|---|---|---|
 | `winget` | [01.01](01-core-essentials/01.01-windows-host-preparation.md) | Windows package install and upgrade | Confirm package identity before install. |
 | `wsl` | [01.02](01-core-essentials/01.02-wsl-initialization.md) | WSL lifecycle control | Distribution state affects all Linux exercises. |
-| `uname` | [01.03](01-core-essentials/01.03-hardware-audit-and-reconnaissance.md) | Kernel and platform audit | Use with `-a` for full context. |
-| `hostnamectl` | [01.03](01-core-essentials/01.03-hardware-audit-and-reconnaissance.md) | Host identity audit | Useful before remote work. |
-| `man` | [01.04](01-core-essentials/01.04-manuals-and-system-help.md) | Manual lookup | Section numbers matter. |
-| `date` | [01.05](01-core-essentials/01.05-system-time-and-scheduling.md) | Time inspection | Time drift breaks logs and certificates. |
+| `uname` | [01.05](01-core-essentials/01.05-hardware-audit-and-reconnaissance.md) | Kernel and platform audit | Use with `-a` for full context. |
+| `hostnamectl` | [01.05](01-core-essentials/01.05-hardware-audit-and-reconnaissance.md) | Host identity audit | Useful before remote work. |
+| `man` | [01.06](01-core-essentials/01.06-manuals-and-system-help.md) | Manual lookup | Section numbers matter. |
+| `date` | [01.07](01-core-essentials/01.07-system-time-and-scheduling.md) | Time inspection | Time drift breaks logs and certificates. |
 
 ## Files
 
