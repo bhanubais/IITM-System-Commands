@@ -32,7 +32,7 @@ These notes may not be aligned with the IITM System Command course structure bec
 + **[1.8 Know your Hardware](1-host-environment/1.8-know-hardware.md)** <br>
   *Execute baseline hardware reconnaissance. Audit CPU architecture, memory allocation, and peripheral integrations to map the physical infrastructure.*
 
-+ **1.9-tmux.md** <br>
++ **[1.9 Multiple Shells at once](1-host-environment/1.9-tmux.md)** <br>
   *Engineer terminal multiplexing. Document sessions, windows, panes, and detachment protocols.*
 
 
