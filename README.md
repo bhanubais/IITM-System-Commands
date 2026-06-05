@@ -41,8 +41,8 @@ These notes may not be aligned with the IITM System Command course structure bec
 - **[2.1 Filesystem](2-filesystem-and-navigation/2.1-filesystem.md)** <br>
   *Audit the Filesystem Hierarchy Standard. Define the purpose of /etc, /var, /proc, and /sys.*
 
-- **2.2-directories.md** <br>
-  *Document absolute versus relative paths. Engineer rapid directory traversal using pushd, popd, and stack memory.*
+- **[2.2 Directory Stacks](2-filesystem-and-navigation/2.2-directory-stacks.md)** <br>
+  *Structure absolute and relative path traversal. Engineer rapid directory toggling and stack memory management using pushd, popd, and dirs. Document stack swapping and alias configurations to capture accidental cd operations.*
 
 - **2.3-file-ops.md** <br>
   *Execute cp, mv, rm, touch, and mkdir operations.*
