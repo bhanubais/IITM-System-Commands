@@ -36,9 +36,9 @@ These notes may not be aligned with the IITM System Command course structure bec
   *Engineer terminal multiplexing. Document sessions, windows, panes, and detachment protocols.*
 
 
-### 2-filesystem-and-navigation
+### 2 Filesystem and Navigation
 
-+ **2.1-filesystem.md** <br>
++ **[2.1 Filesystem](2-filesystem-and-navigation/2.1-filesystem.md)** <br>
   *Audit the Filesystem Hierarchy Standard. Define the purpose of /etc, /var, /proc, and /sys.*
 
 + **2.2-directories.md** <br>
